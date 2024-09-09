@@ -3,7 +3,8 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { YoutubeModule } from './youtube/youtube.module';
+import { GlserviceService } from './glservice.service';
+// import { YoutubeModule } from './youtube/youtube.module';
 
 @NgModule({
   declarations: [
@@ -12,11 +13,15 @@ import { YoutubeModule } from './youtube/youtube.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    YoutubeModule
+  
   ],
-  providers: [
+  providers: [GlserviceService,
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){
+    console.log("you are in module.ts");
+  }
+}

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Inject } from '@angular/core';
+import { GlserviceService } from './glservice.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sumit';
+  constructor(){
+    console.log("You are in Component.ts");
+  }
+@HostListener('click', ['$event'])
+onhostclick(event:Event){
+  alert("this host is listening");
+
+}
 }
