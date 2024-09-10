@@ -14,8 +14,10 @@
     </li>
 </ul> -->
 
-<div *ngFor="let car of cars" style="background: cyan; padding:2px; margin:2px;" >
+<!-- <div *ngFor="let car of cars" style="background: cyan; padding:2px; margin:2px;" >
     <h2>{{car.name}}</h2>
     <p>{{car.colour}}</p>
     <p>{{car.speed}}</p>
-</div>
+</div> -->
+
+<h1 [ngClass]= "{highlight:highlightcolor()}">Learning</h1>

@@ -25,9 +25,25 @@ btnclick(){
 
 // }
 
-cars:Array<car>=[
-  {name:"bmw",colour:"red",speed:200},
-  {name:"audi",colour:"red",speed:200},
-  {name:"tesla",colour:"red",speed:200}
-];
+// cars:Array<car>=[
+//   {name:"bmw",colour:"red",speed:200},
+//   {name:"audi",colour:"red",speed:200},
+//   {name:"tesla",colour:"red",speed:200}
+// ];
+
+// colorFlag:boolean=false;
+// getcolor(){
+//   if(this.colorFlag){
+//     return "red";
+//   }
+//   else{
+//     return "blue"
+//   }
+// }
+
+toHighlight:boolean=true;
+highlightcolor(){
+  return this.toHighlight;
+}
+
 }
