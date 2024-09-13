@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GlserviceService } from './glservice.service';
+import { AppRoutingModule,routingcomponent } from './app-routing/app-routing.module';
 // import { YoutubeModule } from './youtube/youtube.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingcomponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   
   ],
-  providers: [GlserviceService,
+  providers: [
     provideClientHydration()
   ],
   bootstrap: [AppComponent]

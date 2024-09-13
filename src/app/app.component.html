@@ -1,23 +1,13 @@
 <h1 style="text-align: center; color: sienna;"> Welcome </h1>
 <p style="text-align: center;">{{title}} How are You </p>
-<h2>This is component directive ex</h2>
-<button (click)="btnclick()">Click Me</button>
-<br>
-<br>
-<!-- <button *ngIf="!userLoggedIn">Login</button>
-<button *ngIf="userLoggedIn">Logout</button> -->
 
-<!-- <ul>
-    <li *ngFor="let car of cars">
-        {{car}}
+<!-- <p>{{name | uppercase }}</p>
+<p>{{name | lowercase }}</p>
+<p>{{message | titlecase }}</p>
+<p>{{name | slice:3 }}</p> -->
 
-    </li>
-</ul> -->
-
-<!-- <div *ngFor="let car of cars" style="background: cyan; padding:2px; margin:2px;" >
-    <h2>{{car.name}}</h2>
-    <p>{{car.colour}}</p>
-    <p>{{car.speed}}</p>
-</div> -->
-
-<h1 [ngClass]= "{highlight:highlightcolor()}">Learning</h1>
+<nav>
+    <a routerLink="/login">Login</a>
+    <a routerLink="/about">About</a>
+</nav>
+<router-outlet></router-outlet>
